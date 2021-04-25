@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Lorem Ipsum</title>
+</head>
+<body>
+
+<section class="overall">
+     <nav>
+
+        
+           
+
+            <button type="button" class="menubutton"  onclick="showmenu()"  >
+                <span>
+                    <ion-icon name="menu-outline"></ion-icon>
+                </span>
+            </button>
+
+            
+     <div class="nav-links" id="navlinks">
+      <button type="button" class="closebutton" onclick="hidemenu()" >
+                    <span>
+                           <ion-icon name="close-circle-outline"></ion-icon>
+                   </span>
+                </button>
+
+                <ul type="none">
+                      <li>About</li>
+                      <li>Services</li>
+                      <li>Cuisine</li>
+                      <li>Gallary</li>
+                      <li>Contact</li>
+                      <li>Book</li>
+                      <li><button id="cartbutton">cart</button></li>
+                </ul>
+         </div>
+
+         <h1>Lorem Ipsum</h1>
+
+         <ion-icon name="cart-outline" class="trollybutton"></ion-icon>
+
+     </nav>
+
+
+
+     <div class="div2">
+
+        <div class="div2a">
+            <div><h1>What are you having for Lunch?</h1></div>
+            <div id="border"><p> Lorem  ipsum  dolor  sit  amet,</p>
+                <p>consectetur  adipiscing  elit,</p>
+                <p> sed  do  eiusmod  tempor </p>
+                 <p>incididunt  ut  labore  et.</p></div>
+        </div>
+
+        <div class="div2b">
+            
+            <div><img src="Mexican Taco.jpg" alt="" id="img1"> <h2>Mexican Taco</h2></div> 
+             <div><img src="Farmhouse Pizza.JPG" alt="" id="img2"> <h2>Farmhouse Pizza</h2></div> 
+             <div><img src="Chicken Burger.jpg" alt=""> <h2>Chicken Burger</h2></div> 
+             <div><img src="Loaded Nachos.jfif" alt=""> <h2>Loaded Nachos</h2></div> 
+             <div  id="hi" ><img src="Hakka Noodles.jfif" alt=""> <h2>Hakka Noodles</h2></div> 
+
+        
+    </div>
+
+     </div>
+</section>
+
+
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+   
+   <script>
+    var n=document.getElementById("navlinks");
+    var m=document.getElementsByClassName("menubutton")
+    var o=document.getElementsByClassName("closebutton")
+
+    function showmenu(){
+        n.style.left="0";
+    
+    } 
+
+    function hidemenu(){
+        n.style.left="-200px";
+    }
+</script>
+
+</body>
+</html>

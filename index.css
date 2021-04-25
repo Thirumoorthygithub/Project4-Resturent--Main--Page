@@ -1,0 +1,191 @@
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.overall{
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+
+
+nav{display: flex;
+    width: 15%;
+    padding: 1%;
+    justify-content: space-between;
+}
+
+
+nav h1{ 
+    position: absolute; 
+    height: 100px;
+    font-size: 40px; font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    width: 150px;
+    font-weight: bolder;}
+
+
+.nav-links {
+     position: absolute;
+     padding-top: 110px; 
+     text-align: left;
+}
+
+.nav-links ul li{
+    color: gray;
+    text-align: left;
+    font-size: 20px;
+    padding-top: 50px;
+
+}
+
+.nav-links ul li:hover{color: red;}
+
+#cartbutton{
+    background-color: red;
+    width: 150px;
+    height: 40px;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    font-size: 20px;
+}
+
+.menubutton{display: none;}
+.closebutton{display: none;}
+.trollybutton{display: none;}
+
+.div2{align-items: center; }
+
+
+.div2a{
+    display: flex;
+}
+
+.div2a div{
+    margin: 10px;
+    padding: 10px;
+}
+
+.div2a div h1{font-size: 80px; width: 700px; font-weight: bolder;}
+.div2a div p{font-size: 18px; font-style: italic; padding-top: 25px;}
+#border{border-bottom: 1px solid red;}
+
+
+
+.div2b {display: flex; padding-top: 50px;}
+.div2b div{
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px 0px gray;}
+.div2b div:hover{background-color: red}    
+.div2b img{width: 100px; border-radius: 50%;padding: 15px;}
+
+#img1{height: 140px;}
+#img2{height: 140px;}
+
+
+@media(max-width:700px)
+{
+ *{background-color: whitesmoke;}
+    
+    nav{    width: 100%;
+        padding: 0%;
+
+
+    }
+
+    .menubutton{display: block;  color: red; 
+        background-color: whitesmoke;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        font-size: 30px;
+        font-weight: bolder;
+        border: none;
+        outline: none;
+        cursor: pointer;}
+.closebutton{display: block;  color: red; 
+    background-color: whitesmoke;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    cursor: pointer; color: red; }
+.trollybutton{display: block;  width: 40px;height: 40px; padding: 10px; color: red;}
+
+.nav-links{
+    position: absolute;
+    padding-top: 0px;
+    height: 100vh;
+left: -200px;
+z-index: 2;
+transition: 1s;
+
+    
+}
+
+nav h1{
+    position: unset;
+    height: 0;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+
+    
+}
+
+.nav-links ul li{
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+
+.overall{display: block;}
+
+.div2a{
+    display: block;
+    
+}
+.div2a div{
+    margin: 10px;
+    padding: 40px;
+    
+
+}
+.div2a div h1{font-size: 30px; width: 100%; text-align: center;}
+.div2a div p{font-size: 20px; font-style: italic; padding-top: 15px;}
+#border{text-align: center;}
+
+
+.div2b{display: block; align-items: center; padding-left: 70px;}
+.div2b div{ width: 200px;}
+
+.div2b img{background-color: white;}
+.div2b h2{background-color: white;}
+
+
+.div2b div:hover  img{background-color: red;}
+.div2b div:hover h2{background-color:red;}
+
+
+}
+   
+
